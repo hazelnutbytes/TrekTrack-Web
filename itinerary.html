@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- RESPONSIVE META TAG (ADDED FOR MOBILE SUPPORT) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedarkantha Trek | TrekTrack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">
+        <img src="assets/images/logo.png" alt="TrekTrack Logo">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="itinerary.html">Itinerary</a></li>
+        <li><a href="Gear.html">Gear & Porter</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+
+    <div class="btns">
+        <button class="btn">Login</button>
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container hero-flex">
+
+        <div class="slider-wrapper">
+
+            <h1 class="trek-title">Kedarkantha Trek</h1>
+
+            <div class="slider">
+                <video id="slide-1" src="assets/videos/kedarkantha1.mp4" autoplay muted loop></video>
+                <video id="slide-2" src="assets/videos/kedarkantha2.mp4" autoplay muted loop></video>
+                <video id="slide-3" src="assets/videos/kedarkantha3.mp4" autoplay muted loop></video>
+                <video id="slide-4" src="assets/videos/kedarkantha4.mp4" autoplay muted loop></video>
+                <video id="slide-5" src="assets/videos/kedarkantha5.mp4" autoplay muted loop></video>
+            </div>
+
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+            </div>
+
+        </div>
+
+
+        <div class="hero-text">
+
+            <div class="price-box">
+
+                <!-- Trek Info INSIDE CARD -->
+                <div class="trek-info">
+                    <p><strong>6 Days Trek</strong></p>
+
+                    <div class="difficulty">
+                        <span class="label">Difficulty:</span>
+
+                        <div class="rating">
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+
+                        <span class="level">Easy to Moderate</span>
+                    </div>
+
+                    <p>🏔 Max Altitude: 12,500 ft</p>
+                </div>
+
+
+                <!-- BIG PRICE -->
+                <div class="price-section">
+                    <span class="currency">₹</span>
+                    <span id="basePrice" class="main-price">10000</span>
+                    <span class="gst">+ 5% GST</span>
+                </div>
+
+
+                <!-- PLAN OPTIONS -->
+                <div class="plan-options">
+
+                    <label class="plan-item">
+                        <input type="radio" name="plan" value="8500">
+                        <div>
+                            <strong>Basic Trek – ₹8,500</strong>
+                            <p>Essential services included. Transport & add-ons extra.</p>
+                        </div>
+                    </label>
+
+                    <label class="plan-item">
+                        <input type="radio" name="plan" value="10000" checked>
+                        <div>
+                            <strong>All-Inclusive – ₹10,000</strong>
+                            <p>Meals, stay, permits & guide included.</p>
+                        </div>
+                    </label>
+
+                </div>
+
+
+                <!-- DISCOUNTS -->
+                <div class="discount-options">
+
+                    <label>
+                        <input type="checkbox" id="earlyBird">
+                        Early Bird (10% off)
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="groupLeader">
+                        Group Leader (15% off)
+                    </label>
+
+                </div>
+
+
+                <!-- BOOK -->
+                <a href="Gear.html" class="btn" id="bookNowBtn">
+                    Book Now
+                </a>
+
+
+                <ul class="quick-info">
+                    <li>📍 Uttarakhand, India</li>
+                    <li>⏳ 6 Days Trek</li>
+                    <li>🏔 12,500 ft Max Altitude</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- OVERVIEW + ALTITUDE -->
+<div class="overview-altitude">
+
+    <!-- OVERVIEW -->
+    <section class="overview-card">
+
+        <h2>Overview</h2>
+
+        <p>
+            The Kedarkantha Trek is one of India’s most popular winter treks, known for its snow-covered trails and breathtaking Himalayan views. Located in Uttarakhand’s Govind Wildlife Sanctuary, it is considered an ideal trek for beginners as well as adventure enthusiasts.
+        </p>
+
+        <p>
+            The trek starts from the village of Sankri and passes through beautiful forests of pine and oak before reaching the Kedarkantha summit at around 12,500 feet. From the top, trekkers are rewarded with stunning panoramic views of the surrounding Himalayan peaks.
+        </p>
+
+    </section>
+
+
+    <!-- ELEVATION PROFILE -->
+    <section class="altitude-card">
+
+        <h2>Kedarkantha Trek Elevation Profile</h2>
+
+        <div class="elevation-chart">
+
+            <div class="bar day1">
+                <span>Day 1</span>
+                <p>6400 ft</p>
+            </div>
+
+            <div class="bar day2">
+                <span>Day 2</span>
+                <p>7800 ft</p>
+            </div>
+
+            <div class="bar day3">
+                <span>Day 3</span>
+                <p>9100 ft</p>
+            </div>
+
+            <div class="bar summit">
+                <span>Summit</span>
+                <p>12,500 ft</p>
+            </div>
+
+            <div class="bar descend">
+                <span>Return</span>
+                <p>6400 ft</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- PHOTO GALLERY -->
+<section class="photo-gallery-section">
+
+    <h2 class="gallery-title">Photo Gallery</h2>
+
+    <div class="gallery-grid">
+
+        <img src="assets/images/trek1.jpg" class="tall" alt="Kedarkantha Trek View">
+        <img src="assets/images/trek2.jpg" alt="Kedarkantha Trail">
+        <img src="assets/images/trek3.jpg" class="wide" alt="Kedarkantha Panorama">
+        <img src="assets/images/trek4.jpg" alt="Forest Trail">
+        <img src="assets/images/trek5.jpg" class="tall" alt="Snowy Pine Trees">
+        <img src="assets/images/trek6.jpg" alt="Trekkers Walking Trail">
+        <img src="assets/images/trek7.jpg" class="wide" alt="Himalayan Mountain Panorama">
+        <img src="assets/images/trek8.jpg" alt="Kedarkantha Campsite">
+
+    </div>
+
+</section>
+
+
+<!-- ITINERARY -->
+<section class="section">
+
+    <h2>Day-by-Day Itinerary</h2>
+
+    <div class="card itinerary-item">
+        <h3>Day 1 – Arrival at Sankri</h3>
+
+        <div class="day-content">
+            <p>
+                Arrive at the quaint village of Sankri and check into the guesthouse. Meet your trek leader and fellow trekkers for a briefing session covering safety, route details, and trekking tips. Spend the evening exploring the village, taking photos of the surrounding pine forests, and enjoying the serene sunset. Overnight stay at the guesthouse with light dinner and rest.
+            </p>
+        </div>
+    </div>
+
+    <div class="card itinerary-item">
+        <h3>Day 2 – Sankri to Juda Ka Talab</h3>
+
+        <div class="day-content">
+            <p>
+                Begin a 4–5 km trek through dense pine and oak forests with gradual ascents. Along the trail, enjoy panoramic views of snow-capped peaks and glacial streams. Stop for tea breaks at scenic spots and learn basic trekking techniques. Reach the Juda Ka Talab campsite by afternoon, set up tents, and participate in a team briefing on campsite etiquette. Evening campfire and overnight stay in tents.
+            </p>
+        </div>
+    </div>
+
+    <div class="card itinerary-item">
+        <h3>Day 3 – Juda Ka Talab to Base Camp</h3>
+
+        <div class="day-content">
+            <p>
+                Continue the ascent toward Kedarkantha Base Camp. The trail includes gentle snow patches (in winter), small river crossings, and breathtaking Himalayan views. Pause for photography and short rests to enjoy the flora and fauna. Reach the Base Camp by late afternoon, set up tents, and enjoy hot beverages with fellow trekkers. Evening includes preparation for the summit climb and overnight stay in tents.
+            </p>
+        </div>
+    </div>
+
+    <div class="card itinerary-item">
+        <h3>Day 4 – Summit Day</h3>
+
+        <div class="day-content">
+            <p>
+                Start very early (around 4 AM) for the summit climb to 12,500 ft. Trek under the starry sky before sunrise, crossing snow-laden paths and ridge trails. Reach the summit to witness breathtaking sunrise views over the Himalayas. Spend some time at the top capturing photos and enjoying the scenery. Descend carefully back to the Base Camp by afternoon. Evening includes a celebratory campfire and dinner at camp. Overnight stay in tents.
+            </p>
+        </div>
+    </div>
+
+    <div class="card itinerary-item">
+        <h3>Day 5 – Base Camp to Sankri</h3>
+
+        <div class="day-content">
+            <p>
+                Begin your descent through forested trails, retracing your route to Sankri. Stop along the way for short breaks and final photographs of the scenic landscapes. Reach Sankri by afternoon, check into the guesthouse, freshen up, and participate in a small trek completion ceremony. Evening at leisure to interact with fellow trekkers or explore the village market. Overnight stay at guesthouse.
+            </p>
+        </div>
+    </div>
+
+    <div class="card itinerary-item">
+        <h3>Day 6 – Departure</h3>
+
+        <div class="day-content">
+            <p>
+                Enjoy breakfast at Sankri and bid farewell to the trekking team. Depart for Dehradun with wonderful memories and a collection of photos and experiences. Optional stops at local points of interest en route for souvenirs or scenic photography. End of the Kedarkantha trek adventure.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- INCLUSIONS & EXCLUSIONS -->
+<section class="section">
+    <h2>What's Included & Not Included</h2>
+
+    <div class="inc-exc-container">
+
+        <!-- INCLUDED -->
+        <div class="inc-exc-card included">
+            <h3>What's Included</h3>
+            <ul>
+                <li>All meals during the trek, from Dinner on Day 1 to Breakfast on Day 6</li>
+                <li>Guesthouse stay at Sankri on Day 1 & Day 5 (sharing basis)</li>
+                <li>Forest permits and camping charges (up to standard Indian rates)</li>
+                <li>Tents, sleeping bags, and mats provided</li>
+                <li>Safety equipment: ropes, harnesses, carabiners, pulleys</li>
+                <li>Services of trek guide, cook, helpers, porters & mules for communal luggage</li>
+                <li>Certified Trek Leader throughout the trek</li>
+            </ul>
+        </div>
+
+        <!-- NOT INCLUDED -->
+        <div class="inc-exc-card not-included">
+            <h3>What's Not Included</h3>
+            <ul>
+                <li>Meals during road journeys</li>
+                <li>Transportation from Dehradun to Sankri and back</li>
+                <li>Carriage of personal bags during the trek</li>
+                <li>Insurance of any kind</li>
+                <li>Expenses of personal nature (shopping, tips, etc.)</li>
+                <li>Any services or items not mentioned in the inclusion list</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- PACKING + FAQ SIDE BY SIDE -->
+<div class="info-sections">
+
+    <!-- PACKING LIST -->
+    <section class="section packing-list">
+
+        <h2>Trek Packing List</h2>
+
+        <p>Make sure you carry the following essentials for a safe and comfortable Kedarkantha trek.</p>
+
+        <div class="packing-card">
+
+            <ul>
+                <li>Trekking Shoes with good grip</li>
+                <li>40–60L Backpack</li>
+                <li>Warm Down Jacket</li>
+                <li>Thermal Innerwear</li>
+                <li>Woolen Cap and Gloves</li>
+                <li>Sunglasses (UV protection)</li>
+                <li>Sunscreen and Lip Balm</li>
+                <li>Reusable Water Bottles</li>
+                <li>Personal Medicines</li>
+                <li>Headlamp or Torch</li>
+                <li>Energy Bars / Dry Snacks</li>
+                <li>Extra Socks</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="section">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <div class="faq-question">🏔 What kind of terrain will we encounter?</div>
+                <div class="faq-answer">
+                    The Kedarkantha trek passes through gentle forest trails, pine and oak forests, snow patches in winter,
+                    and ridge trails with panoramic Himalayan views.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">📝 Are permits required?</div>
+                <div class="faq-answer">
+                    Yes, forest permits are mandatory. Trek leaders usually handle the formalities.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">🫁 Is oxygen available for high altitude?</div>
+                <div class="faq-answer">
+                    Trek leaders carry first aid kits and emergency oxygen cylinders.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">🎒 What should I pack?</div>
+                <div class="faq-answer">
+                    Essentials include trekking shoes, warm clothing, gloves, hats, water bottles, sunscreen, and sunglasses.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">❄ When is the best time to do the Kedarkantha Trek?</div>
+                <div class="faq-answer">
+                    The best time is from December to April for snow trekking, and October to November for clear mountain views
+                    and pleasant weather.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">💪 Is the trek suitable for beginners?</div>
+                <div class="faq-answer">
+                    Yes, Kedarkantha is considered a beginner-friendly Himalayan trek with gradual climbs and well-defined trails.
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- LEFT : LOGO + ABOUT -->
+        <div class="footer-about">
+
+            <div class="footer-logo">
+                <img src="assets/images/logo.png" alt="TrekTrack Logo">
+            </div>
+
+            <p>
+                TrekTrack helps adventurers plan and track treks across the Himalayas.
+                Explore routes, manage gear, and experience the mountains with confidence.
+            </p>
+
+        </div>
+
+
+        <!-- CENTER : QUICK LINKS -->
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Discount Policy</a></li>
+                <li><a href="#">Website Disclaimer</a></li>
+            </ul>
+
+        </div>
+
+
+        <!-- RIGHT : CANCELLATION POLICY -->
+        <div class="footer-policy">
+
+            <h3>Cancellation Policy</h3>
+
+            <ul>
+                <li>30+ days before departure – 5% deduction</li>
+                <li>15–30 days before departure – 25% deduction</li>
+                <li>7–15 days before departure – 50% deduction</li>
+                <li>Less than 7 days – No refund</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 TrekTrack | All Rights Reserved</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1014 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:"Poppins",sans-serif;
+    background-color: #eedaca;
+    color:#2f3e34;
+}
+
+/* Navbar */
+nav{
+    width:100%;
+    padding:1rem 5%;
+    background:#afd8a4;
+    border-bottom:10px solid #5C3A21;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* Navbar Logo */
+.logo img{
+    height:55px;
+    transform:scale(2);
+}
+
+/* Navbar Links */
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:2rem;
+}
+
+.nav-links a{
+    font-size:1.05rem;
+    font-weight:500;
+    text-decoration:none;
+    color:#2f3e34;
+}
+
+.nav-links a:hover{
+    color:#a67c52;
+}
+
+/* Navbar Button */
+.btns{
+    display:flex;
+}
+
+.btn{
+    display:inline-block;
+    padding:8px 22px;
+    border-radius:30px;
+    font-weight:600;
+    font-size:1rem;
+    background:#a67c52;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.btn:hover{
+    background:#8c633f;
+}
+
+/* General Section */
+.section{
+    padding:3rem 10%;
+}
+
+.section h2{
+    margin-bottom:1rem;
+}
+
+.section p{
+    line-height:1.6;
+}
+
+.container{
+    padding-top:0;
+}
+
+/* Hero Section */
+.hero{
+    background:#d3eecc;
+    padding:.5rem 5%;
+}
+
+.hero-flex{
+    display:flex;
+    align-items:flex-start;
+    gap:2rem;
+}
+
+.hero-text{
+    flex:1;
+    max-width:420px;
+}
+
+.hero-text h1{
+    font-size:2.5rem;
+    margin-bottom:.5rem;
+}
+
+.hero-text p{
+    margin-bottom:1rem;
+}
+
+/* Card */
+.card{
+    background:#f6f8f8;
+    padding:1.5rem;
+    border-radius:10px;
+    margin-bottom:1rem;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+ul{
+    margin-top:1rem;
+    padding-left:1.2rem;
+}
+
+li{
+    margin-bottom:.5rem;
+}
+
+/* Footer */
+.site-footer{
+    background:#afd8a4;
+    border-top:10px solid #5C3A21;
+    padding:40px 8%;
+    color:#2f3e34;
+    width:100%;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr 1fr 1fr;
+    gap:30px;
+    align-items:start;
+}
+
+/* Footer Logo */
+.footer-logo img{
+    height:100px;
+    width:auto;
+    display:block;
+    margin-bottom:0px;
+    margin-top: -30px;
+    margin-left: -20px;
+}
+
+.footer-about p{
+    font-size:0.95rem;
+    line-height:1.6;
+    max-width:360px;
+}
+
+/* Footer Links */
+.footer-links h3,
+.footer-policy h3{
+    font-size:1.2rem;
+    margin-bottom:15px;
+}
+
+.footer-links ul,
+.footer-policy ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.footer-links li{
+    margin-bottom:8px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#2f3e34;
+    font-size:0.95rem;
+}
+
+.footer-links a:hover{
+    color:#a67c52;
+}
+
+.footer-policy li{
+    margin-bottom:10px;
+    font-size:0.95rem;
+    line-height:1.5;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom{
+    max-width:1200px;
+    margin:30px auto 0;
+    padding-top:15px;
+    border-top:1px solid rgba(0,0,0,0.2);
+    text-align:center;
+    font-size:13px;
+}
+
+@media(max-width:900px){
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer-about p{
+        margin:auto;
+    }
+
+}
+
+/* Hero Image Slider */
+.slider-wrapper{
+    flex:1.6;
+    position:relative;
+    margin-top:20px;
+    margin-left:-35px;
+}
+
+.slider-wrapper::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.25);
+    border-radius:12px;
+    pointer-events:none;
+    z-index:1;
+}
+
+.slider{
+    display:flex;
+    height:80vh;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    box-shadow:0 1.5rem 3rem -0.75rem rgba(0,0,0,0.25);
+}
+
+.slider video{
+    flex:1 0 100%;
+    scroll-snap-align:start;
+    object-fit:cover;
+    width:100%;
+    height:100%;
+}
+
+/* Slider Dots Navigation */
+.slider-nav{
+    display:flex;
+    gap:1rem;
+    position:absolute;
+    bottom:1.25rem;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:2;
+}
+
+.slider-nav a{
+    width:.5rem;
+    height:.5rem;
+    border-radius:50%;
+    background:white;
+    opacity:.75;
+}
+
+.slider-nav a:hover{
+    opacity:1;
+}
+
+/* Difficulty Rating Dots */
+.difficulty{
+    margin-top:1rem;
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+}
+
+.label{
+    font-weight:600;
+}
+
+.rating{
+    display:flex;
+    gap:.4rem;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#cbb89d;
+}
+
+.dot.active{
+    background:#a67c52;
+}
+
+.level{
+    font-size:.95rem;
+}
+
+/* Price Box */
+.price-box{
+    margin-top:1rem;
+    background:#e3ddcd;
+    padding:1.5rem;
+    border-radius:14px;
+    border:1px solid #e6dfd2;
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
+    max-width:420px;
+    min-width:350px;
+}
+
+.price{
+    font-size:1.8rem;
+    margin-bottom:.8rem;
+}
+
+.price span{
+    font-size:.9rem;
+    color:#a67c52;
+}
+
+.price-box .btn{
+    width:100%;
+    margin-bottom:1rem;
+}
+
+.quick-info{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.quick-info li{
+    font-size:.95rem;
+    margin-bottom:.5rem;
+    color:#4a5c50;
+}
+
+/* Itinerary Accordion */
+.itinerary-item{
+    cursor:pointer;
+    transition:.3s;
+}
+
+.itinerary-item:hover{
+    box-shadow:0 8px 18px rgba(0,0,0,0.08);
+}
+
+.day-content{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.itinerary-item:hover .day-content{
+    max-height:200px;
+    margin-top:.8rem;
+}
+
+/* Included / Not Included Cards */
+.inc-exc-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.inc-exc-card {
+    flex: 1;
+    padding: 1.8rem 1.5rem;
+    border-radius: 15px;
+    min-width: 280px;
+    transition: 0.3s;
+}
+
+.inc-exc-card.included {
+    background: white;
+    box-shadow: 0 6px 18px rgba(0, 200, 0, 0.2);
+}
+
+.inc-exc-card.not-included {
+    background: white;
+    box-shadow: 0 6px 18px rgba(200, 0, 0, 0.2);
+}
+
+.inc-exc-card.included:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 200, 0, 0.4);
+}
+
+.inc-exc-card.not-included:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(200, 0, 0, 0.4);
+}
+
+.inc-exc-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* FAQ Accordion */
+.faq-container{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    margin-top:2rem;
+}
+
+.faq-item{
+    background:white;
+    border-radius:12px;
+    padding:1rem 1.5rem;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    cursor:pointer;
+}
+
+.faq-item:hover{
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    transform:translateY(-2px);
+}
+
+.faq-question{
+    font-weight:600;
+    margin-bottom:.5rem;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.faq-item:hover .faq-answer{
+    max-height:300px;
+    padding-top:.5rem;
+}
+
+/* Altitude Chart Image */
+.altitude-image-container{
+    text-align:center;
+    margin-top:2rem;
+}
+
+.altitude-image-container img{
+    max-width:50%;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.07);
+}
+
+/* Plan Options */
+.plan-options{
+    margin:1rem 0;
+    display:flex;
+    flex-direction:column;
+    gap:.8rem;
+}
+
+.plan-item{
+    display:flex;
+    gap:.8rem;
+    cursor:pointer;
+    padding:.6rem;
+    border-radius:10px;
+}
+
+.plan-item:hover{
+    background:#f3efe8;
+}
+
+.discount-options{
+    margin-bottom:1rem;
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    font-size:.9rem;
+}
+
+/* Trek Title Overlay on Slider */
+.trek-title{
+    position:absolute;
+    bottom:25px;
+    left:25px;
+    color:white;
+    font-size:3rem;
+    font-weight:700;
+    text-shadow:0 4px 20px rgba(0,0,0,0.7);
+    z-index:2;
+}
+
+/* Price Display */
+.price-section{
+    text-align:center;
+    margin:1.2rem 0 1.5rem;
+}
+
+.currency{
+    font-size:28px;
+    font-weight:600;
+}
+
+.main-price{
+    font-size:48px;
+    font-weight:700;
+}
+
+.gst{
+    display:block;
+    font-size:.85rem;
+    color:#a67c52;
+    margin-top:.3rem;
+}
+
+/* Gear Shop Header */
+.gear-header{
+    text-align:center;
+    padding:30px 0 10px;
+}
+
+.gear-header h2{
+    font-size:28px;
+}
+
+.gear-header p{
+    color:#777;
+}
+
+/* Gear Cards Grid */
+.gear-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:28px;
+    padding:40px 8%;
+}
+
+.gear-card{
+    position: relative;
+    background:#efefef;
+    border-radius:16px;
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:420px;   
+    transition:0.25s;
+}
+
+.gear-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.18);
+}
+
+.gear-card img{
+    width:100%;
+    height:300px;   
+    object-fit:contain;
+    background:#e9e9e9;
+    border-radius:12px;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.gear-info h3{
+    font-size:15px;
+    margin:5px 0;
+}
+
+.gear-info p{
+    font-size:13px;
+    color:#666;
+}
+
+.gear-info{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    margin-top:auto;
+}
+
+/* Add to Cart Button */
+.cart-btn{
+    position:absolute;
+    right:12px;
+    bottom:12px;
+    background:#7bc043;
+    border:none;
+    width:36px;
+    height:36px;
+    border-radius:8px;
+    font-size:20px;
+    cursor:pointer;
+    color:white;
+}
+
+.cart-btn:hover{
+    background:#66a938;
+}
+
+/* Cart Sidebar */
+.cart-sidebar{
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    width:280px;
+    background:white;
+    border-radius:14px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.18);
+    padding:18px;
+    max-height:420px;
+    overflow:auto;
+}
+
+.cart-item{
+    display:grid;
+    grid-template-columns:1fr auto auto;
+    align-items:center;
+    gap:10px;
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+
+.item-name{
+    font-size:15px;
+}
+
+.qty-controls{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.item-price{
+    font-weight:600;
+}
+
+.qty-btn{
+    background:#7ac142;
+    border:none;
+    color:white;
+    padding:3px 8px;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+.checkout-btn{
+    width:100%;
+    margin-top:10px;
+    padding:10px;
+    background:#7ac142;
+    border:none;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Overview & Altitude Side-by-Side Layout */
+.overview-altitude {
+    display: flex;
+    gap: 40px;          
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    align-items: flex-start;  
+    flex-wrap: nowrap;        
+}
+
+.overview-card {
+    flex: 0 0 55%;      
+    font-size: 1rem;     
+    line-height: 1.6;
+    padding: 0;
+}
+
+.overview-card h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.overview-card p {
+    margin-bottom: 12px;
+}
+
+.altitude-card {
+    flex: 0 0 40%;      
+    padding: 0;
+}
+
+.altitude-card h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.altitude-image-container img {
+    width: 100%;          
+    max-width: 100%;     
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.altitude-image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Photo Gallery Section */
+.photo-gallery-section{
+    max-width:1200px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.gallery-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+    position:relative;
+}
+
+.gallery-title::after{
+    content:"";
+    width:120px;
+    height:4px;
+    background:#2e7d32;
+    display:block;
+    margin:10px auto 0;
+    border-radius:2px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(250px,1fr));
+    grid-auto-rows:200px;
+    gap:15px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+    transition:transform 0.3s ease;
+    cursor:pointer;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* Gallery Span Helpers */
+.tall{
+    grid-row:span 2;
+}
+
+.wide{
+    grid-column:span 2;
+}
+
+/* Responsive - Tablet */
+@media (max-width:900px){
+    .gallery-grid{
+        column-count:2;
+    }
+}
+
+/* Responsive - Mobile Small */
+@media (max-width:500px){
+    .gallery-grid{
+        column-count:1;
+    }
+}
+
+/* Responsive - Tablet/Small Desktop */
+@media (max-width: 1024px){
+    .hero-flex{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .slider{
+        height:50vh;
+    }
+
+    .price-box{
+        max-width:100%;
+        min-width:0;
+    }
+
+    .overview-altitude{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .altitude-image-container img{
+        max-width:100%;
+    }
+
+    .section{
+        padding:3rem 6%;
+    }
+
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px){
+    nav{
+        flex-direction:column;
+        gap:10px;
+        padding:1rem 4%;
+    }
+
+    .logo img{
+        height:40px;
+        transform:scale(1);
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:1rem;
+    }
+
+    .trek-title{
+        font-size:2rem;
+    }
+
+    .slider{
+        height:40vh;
+    }
+
+    .hero{
+        padding:1rem 4%;
+    }
+
+    .section{
+        padding:2.5rem 5%;
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+        grid-auto-rows:160px;
+    }
+
+    .altitude-image-container img{
+        max-width:100%;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+}
+
+/* Responsive - Small Mobile */
+@media (max-width: 480px){
+    .trek-title{
+        font-size:1.6rem;
+    }
+
+    .main-price{
+        font-size:36px;
+    }
+
+    .slider{
+        height:35vh;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .itinerary-item:hover .day-content{
+        max-height:400px;
+    }
+
+    .gear-container{
+        grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    }
+
+    .cart-sidebar{
+        width:90%;
+        right:5%;
+    }
+}
+
+/* ELEVATION PROFILE GRAPH */
+
+.elevation-chart{
+display:flex;
+align-items:flex-end;
+justify-content:space-between;
+height:260px;
+margin-top:25px;
+padding:0 10px;
+gap:15px;
+}
+
+.bar{
+width:55px;
+background:#7ac142;
+border-radius:6px 6px 0 0;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+align-items:center;
+padding-bottom:6px;
+color:white;
+font-size:12px;
+transition:0.3s;
+}
+
+.bar span{
+margin-top:8px;
+font-weight:600;
+color:#2f3e34;
+}
+
+.bar p{
+font-size:11px;
+color:#2f3e34;
+}
+
+.bar:hover{
+transform:scale(1.05);
+background:#5da832;
+}
+
+/* HEIGHTS REPRESENT ALTITUDE */
+
+.day1{
+height:90px;
+}
+
+.day2{
+height:130px;
+}
+
+.day3{
+height:170px;
+}
+
+.summit{
+height:220px;
+background:#a67c52;
+}
+
+.descend{
+height:100px;
+}
+
+/* PACKING + FAQ SIDE BY SIDE LAYOUT */
+
+.info-sections{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:start;
+}
+
+/* PACKING LIST SECTION */
+
+.packing-list{
+text-align:center;
+}
+
+.packing-card{
+background:white;
+padding:25px 35px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+text-align:left;
+transition:all 0.3s ease;
+}
+
+.packing-card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 24px rgba(0,0,0,0.15);
+}
+
+.packing-card ul{
+padding-left:20px;
+}
+
+.packing-card li{
+margin-bottom:10px;
+font-size:0.95rem;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.info-sections{
+grid-template-columns:1fr;
+}
+
+}

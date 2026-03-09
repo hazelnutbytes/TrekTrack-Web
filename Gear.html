@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rent Gear | TrekTrack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="TrekTrack Logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="itinerary.html">Itinerary</a></li>
+            <li><a href="Gear.html">Gear & Porter</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="btns">
+            <button class="btn">Login</button>
+        </div>
+    </nav>
+
+
+    <!-- PAGE HEADER -->
+    <section class="gear-header">
+        <h2>Rent Trekking Gear</h2>
+        <p>Select your rental gear for your trek</p>
+    </section>
+
+
+    <!-- GEAR GRID -->
+    <section class="gear-container">
+
+        <div class="gear-card">
+            <img src="assets/images/poncho.jpg">
+            <div class="gear-info">
+                <h3>Poncho</h3>
+                <p>from ₹50.00</p>
+            </div>
+            <button class="cart-btn gear-checkbox" data-price="50">+</button>
+        </div>
+
+        <div class="gear-card">
+            <img src="assets/images/rucksack90.jpg">
+            <div class="gear-info">
+                <h3>90L Trekking Rucksack</h3>
+                <p>from ₹170.00</p>
+            </div>
+            <button class="cart-btn gear-checkbox" data-price="170">+</button>
+        </div>
+
+        <div class="gear-card">
+            <img src="assets/images/jacket_men.jpg">
+            <div class="gear-info">
+                <h3>3-in-1 Men's Trekking Jacket</h3>
+                <p>from ₹150.00</p>
+            </div>
+            <button class="cart-btn gear-checkbox" data-price="150">+</button>
+        </div>
+
+        <div class="gear-card">
+            <img src="assets/images/torch.jpg">
+            <div class="gear-info">
+                <h3>Head Band Torch</h3>
+                <p>from ₹50.00</p>
+            </div>
+            <button class="cart-btn gear-checkbox" data-price="50">+</button>
+        </div>
+
+        <div class="gear-card">
+            <img src="assets/images/jacket_women.jpg">
+            <div class="gear-info">
+                <h3>Women's 3-in-1 Trekking Jacket</h3>
+                <p>from ₹150.00</p>
+            </div>
+            <button class="cart-btn gear-checkbox" data-price="150">+</button>
+        </div>
+
+        <div class="gear-card">
+            <img src="assets/images/gloves.jpg">
+            <div class="gear-info">
+                <h3>Trekking Gloves</h3>
+                <p>from ₹50.00</p>
+            </div>
+            <button class="cart-btn gear-checkbox" data-price="50">+</button>
+        </div>
+
+        <div class="gear-card">
+            <img src="assets/images/pole.jpg">
+            <div class="gear-info">
+                <h3>Hiking Pole</h3>
+                <p>from ₹60.00</p>
+            </div>
+            <button class="cart-btn gear-checkbox" data-price="60">+</button>
+        </div>
+
+        <div class="gear-card">
+            <img src="assets/images/rucksack70.jpg">
+            <div class="gear-info">
+                <h3>70L Trekking Rucksack</h3>
+                <p>from ₹150.00</p>
+            </div>
+            <button class="cart-btn gear-checkbox" data-price="150">+</button>
+        </div>
+
+    </section>
+
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-sidebar">
+
+        <h3>My Order</h3>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-summary">
+            <p>Trek Price: ₹<span id="trekPriceSide">0</span></p>
+            <p>Gear Total: ₹<span id="gearTotalSide">0</span></p>
+            <h4>Total: ₹<span id="finalTotalSide">0</span></h4>
+        </div>
+
+        <div class="porter-option">
+
+            <h3>Porter Service</h3>
+
+            <label>
+                <input type="checkbox" id="porterService" data-price="1200">
+                Hire a porter to carry your bag (up to 12kg) – ₹1200
+            </label>
+
+        </div>
+
+        <button class="checkout-btn">Checkout</button>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <!-- LEFT : LOGO + ABOUT -->
+            <div class="footer-about">
+
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="TrekTrack Logo">
+                </div>
+
+                <p>
+                    TrekTrack helps adventurers plan and track treks across the Himalayas.
+                    Explore routes, manage gear, and experience the mountains with confidence.
+                </p>
+
+            </div>
+
+
+            <!-- CENTER : QUICK LINKS -->
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Discount Policy</a></li>
+                    <li><a href="#">Website Disclaimer</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- RIGHT : CANCELLATION POLICY -->
+            <div class="footer-policy">
+
+                <h3>Cancellation Policy</h3>
+
+                <ul>
+                    <li>30+ days before departure – 5% deduction</li>
+                    <li>15–30 days before departure – 25% deduction</li>
+                    <li>7–15 days before departure – 50% deduction</li>
+                    <li>Less than 7 days – No refund</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 TrekTrack | All Rights Reserved</p>  
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
